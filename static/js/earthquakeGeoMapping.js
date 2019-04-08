@@ -71,13 +71,13 @@ var earthquakeOverlays = {
 
 // Map definition & default layers
 var earthqaukesMap = L.map("earthquake-map", {
-  center: [37.09, -95.71],
+  center: [38.9, -97.5],
   zoom: 4,
   layers: [light, quakeLayer, tectonicLayer]
 });
 
 // Layer controls
-L.control.layers(baseMaps, earthquakeOverlays, {collapsed: false}).addTo(earthqaukesMap);
+L.control.layers(baseMaps, earthquakeOverlays).addTo(earthqaukesMap);
 
 // Legend
 var legend = L.control({position: 'bottomright'});
