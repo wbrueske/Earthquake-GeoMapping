@@ -6,7 +6,7 @@
 // ==================================================
 // This script utilizes Earthquake GeoJSON from the 
 // USGS and tectonic plate boundary GeoJSON from 
-// Hugo Ahlenius (github.com/frazen) to plot recent
+// Hugo Ahlenius (github.com/fraxen) to plot recent
 // earthquakes around the globe with Leaflet.js and
 // Mapbox.
 // ==================================================
