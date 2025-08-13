@@ -38,18 +38,16 @@ function convertTime(time) {
 // Map Definitions
 // ==================================================
 // Light map tiles
-var light = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
+var light = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/light-v11/tiles/512/{z}/{x}/{y}?access_token={accessToken}", {
   attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
   maxZoom: 18,
-  id: "mapbox.light",
   accessToken: "pk.eyJ1Ijoid2JydWVza2UiLCJhIjoiY2p0Ym1jbHR3MG43azN5cDRud3NrajY4aSJ9.MY-Vm852vmNh92n0letPAw"
 });
 
 // Satellite map tiles
-var satellite = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
+var satellite = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/satellite-v9/tiles/512/{z}/{x}/{y}?access_token={accessToken}", {
   attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
   maxZoom: 18,
-  id: "mapbox.streets-satellite",
   accessToken: "pk.eyJ1Ijoid2JydWVza2UiLCJhIjoiY2p0Ym1jbHR3MG43azN5cDRud3NrajY4aSJ9.MY-Vm852vmNh92n0letPAw"
 });
 
