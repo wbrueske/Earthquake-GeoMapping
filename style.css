@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#earthquake-map,
+body,
+html {
+  height: 100%;
+}
+
+#earthquake-map {
+  z-index: 1;
+}
+
+.legend {
+  line-height: 18px;
+  color: #555;
+  padding: 10px;
+}
+
+.title {
+  display: block;
+  font-size: 1.25em;
+  margin-bottom: 5px;
+}
+
+.legend i {
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin-right: 8px;
+}
+
+.github-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  position: fixed;
+  left: 8px;
+  bottom: 28px;
+  z-index: 100;
+  font-family: sans-serif;
+  text-decoration: none;
+  background-color: #fff;
+  border: 2px solid #afafb0;
+  padding: 10px;
+  border-radius: 5px;
+  color: #555;
+  transition: color .2s;
+}
+
+.github-link svg {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+.github-link path {
+  fill: #555;
+  transition: fill .2s;
+}
+
+.github-link:hover {
+  color: #fd8d3c;
+}
+
+.github-link:hover path {
+  fill: #fd8d3c;
+}
